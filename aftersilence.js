@@ -7,7 +7,7 @@ module.exports = function(dur, s) {
   flyd.map(function(v) {
     buffer.push(v);
     clearTimeout(scheduled);
-    setTimeout(function() {
+    scheduled = setTimeout(function() {
       ns(buffer);
       buffer = [];
     }, dur);

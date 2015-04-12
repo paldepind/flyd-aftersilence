@@ -17,5 +17,5 @@ afterSilence(function(values) {
 ```javascript
 afterSilence(function(values) {
   console.log('You typed: "' + values.join('') + '" without any pauses');
-}, afterSilence(100, characterTyped);
+}, afterSilence(300, characterTyped);
 ```

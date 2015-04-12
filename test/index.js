@@ -4,8 +4,10 @@ var stream = flyd.stream;
 
 var afterSilence = require('../aftersilence.js');
 
-describe('afterSilence', function(done) {
-  it('correctly buffers values', function() {
+// KISS way of testing time dependent code :)
+
+describe('afterSilence', function() {
+  it('correctly buffers values', function(done) {
     var result = [];
     var i = 0;
     var s1 = stream();
@@ -19,7 +21,7 @@ describe('afterSilence', function(done) {
     setTimeout(push, 20);
     setTimeout(push, 30);
     setTimeout(push, 40);
-    setTimeout(push, 90);
+    setTimeout(push, 95);
     setTimeout(push, 100);
     setTimeout(push, 110);
     setTimeout(push, 120);
@@ -33,7 +35,7 @@ describe('afterSilence', function(done) {
       done();
     }, 240);
   });
-  it('only emits values after specified silence', function() {
+  it('only emits values after specified silence', function(done) {
     var result = [];
     var i = 0;
     var s1 = stream();
