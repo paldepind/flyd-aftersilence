@@ -1,0 +1,33 @@
+{
+  "name": "flyd-aftersilence",
+  "version": "0.0.1",
+  "description": "Flyd module that buffers values from a stream and emits them after a specified duration of silience",
+  "main": "aftersilence.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paldepind/flyd-aftersilence.git"
+  },
+  "keywords": [
+    "flyd",
+    "buffer",
+    "time",
+    "silence",
+    "delay",
+    "group"
+  ],
+  "author": "Simon Friis Vindum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paldepind/flyd-aftersilence/issues"
+  },
+  "homepage": "https://github.com/paldepind/flyd-aftersilence",
+  "dependencies": {
+    "flyd": "0.0.x"
+  }
+}
