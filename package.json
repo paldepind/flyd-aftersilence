@@ -1,6 +1,6 @@
 {
   "name": "flyd-aftersilence",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Flyd module that buffers values from a stream and emits them after a specified duration of silience",
   "main": "aftersilence.js",
   "directories": {
@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/paldepind/flyd-aftersilence",
   "dependencies": {
-    "flyd": "0.0.x"
+    "flyd": "0.1.x"
   }
 }

@@ -3,14 +3,12 @@ var flyd = require('flyd');
 module.exports = function(dur, s) {
   var scheduled;
   var buffer = [];
-  var ns = flyd.stream();
-  flyd.map(function(v) {
-    buffer.push(v);
+  return flyd.stream([s], function(self) {
+    buffer.push(s());
     clearTimeout(scheduled);
     scheduled = setTimeout(function() {
-      ns(buffer);
+      self(buffer);
       buffer = [];
     }, dur);
-  }, s);
-  return ns;
+  });
 };
