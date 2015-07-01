@@ -1,10 +1,10 @@
 # flyd-aftersilence
 Buffers values from a source stream in an array and emits it after a
-specified duration of silience from the source stream.
+specified duration of silence from the source stream.
 
 __Signature__
 
-`Stream a -> Stream b
+`Stream a -> Stream b`
 
 __Example__
 
